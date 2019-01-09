@@ -1,7 +1,7 @@
 set -ex
 MODEL='bicycle_gan'
 # dataset details
-CLASS='edges2shoes'  # facades, day2night, edges2shoes, edges2handbags, maps
+CLASS='maps'  # facades, day2night, edges2shoes, edges2handbags, maps
 NZ=8
 NO_FLIP='--no_flip'
 DIRECTION='AtoB'
