@@ -3,7 +3,7 @@ import torch
 from collections import OrderedDict
 from . import networks
 
-
+## zhushi
 class BaseModel():
     def name(self):
         return 'BaseModel'
