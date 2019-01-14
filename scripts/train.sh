@@ -1,5 +1,5 @@
 set -ex
-CLASS='edges2shoes'  # facades, day2night, edges2shoes, edges2handbags, maps
+CLASS='maps'  # facades, day2night, edges2shoes, edges2handbags, maps
 MODEL='bicycle_gan'
 CLASS=${1}
 GPU_ID=${2}
