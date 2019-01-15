@@ -1,11 +1,11 @@
 set -ex
 # models
-RESULTS_DIR='./results/edges2shoes'
-G_PATH='./pretrained_models/edges2shoes_net_G.pth'
-E_PATH='./pretrained_models/edges2shoes_net_E.pth'
+RESULTS_DIR='./results/maps'
+G_PATH='../checkpoints/maps/60_net_G.pth'
+E_PATH='../checkpoints/maps/60_net_E.pth'
 
 # dataset
-CLASS='edges2shoes'
+CLASS='maps'
 DIRECTION='AtoB' # from domain A to domain B
 LOAD_SIZE=256 # scale images to this size
 FINE_SIZE=256 # then crop to this size
@@ -20,7 +20,7 @@ NUM_SAMPLES=10 # number of samples per input images
 CUDA_VISIBLE_DEVICES=${GPU_ID} python ./test.py \
   --dataroot ./datasets/${CLASS} \
   --results_dir ${RESULTS_DIR} \
-  --checkpoints_dir ./pretrained_models/ \
+  --checkpoints_dir ../checkpoints/ \
   --name ${CLASS} \
   --direction ${DIRECTION} \
   --loadSize ${FINE_SIZE} \
